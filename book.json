@@ -1,0 +1,29 @@
+{
+  "title": "hp-note",
+  "description": "黄埔高端笔记",
+  "author": "zhuqiang",
+  "language": "zh-hans",
+   "plugins": [
+      "splitter",
+      "-github",
+      "prism",
+      "-highlight",
+      "expandable-chapters",
+      "page-footer-ex",
+      "anchor-navigation-ex",
+      "advanced-emoji"
+    ],
+  "pluginsConfig": {
+    "prism": {
+       "css": [
+         "prismjs/themes/prism-okaidia.css"
+       ]
+    },
+    "anchor-navigation-ex":{
+       "multipleH1":false
+    },
+    "theme-default": {
+       "showLevel": true
+    }
+  }
+} 
