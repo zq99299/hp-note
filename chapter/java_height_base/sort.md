@@ -89,7 +89,7 @@ for (int i = 1; i < a.length; i++) {
 
 ```java
  @Test
-    public void q6() {
+    public void q7() {
 //        int[] arr = {6, 8, 1, 3, 2, 6, 4};
         int[] arr = {49, 38, 65, 97, 76, 13, 27, 49, 78, 34, 12, 64, 1, 8};
         System.out.println("排序之前：" + Arrays.toString(arr));
@@ -162,3 +162,8 @@ e:[4, 2, 1, 3, 2, 6, 8]
 // 然后分成两拨，继续上面的步骤，直到最后没有可比了，则整个列表就都是有序的了			  
 
 ```
+
+
+
+
+
