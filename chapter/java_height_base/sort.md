@@ -82,3 +82,83 @@ for (int i = 1; i < a.length; i++) {
 			k-- = -1,不满足条件，退出内部循环。a[k+1] = a[0] = 38
 			插入后：38,49,65,97,76
 ```
+
+
+
+## 快速排序
+
+```java
+ @Test
+    public void q6() {
+//        int[] arr = {6, 8, 1, 3, 2, 6, 4};
+        int[] arr = {49, 38, 65, 97, 76, 13, 27, 49, 78, 34, 12, 64, 1, 8};
+        System.out.println("排序之前：" + Arrays.toString(arr));
+        quick(arr);
+        System.out.println("排序之后：" + Arrays.toString(arr));
+    }
+
+    private static void quick(int[] a) {
+        if (a.length > 0) {
+            quickSort(a, 0, a.length - 1);
+        }
+    }
+
+    private static void quickSort(int[] arr, int low, int hight) {
+        if (low < hight) {
+            int middle = getMiddle(arr, low, hight);
+            quickSort(arr, low, middle - 1);
+            quickSort(arr, middle + 1, hight);
+        }
+    }
+
+    private static int getMiddle(int[] a, int low, int hight) {
+        // 分5步,核心分4步
+        /**
+         * 1.从低位找一个基准值
+         * 2.从高位开始降低对比找到比基准值还小的数值，然后把这个找到的放到当前的低位
+         * 3.从低位开始增高对比找到比基准值还大的数值，然后把这个找到的放到当前的高位
+         * 4.把当前的低位放入基准值，这个就是一个分界点，左边的小于基准值，右边的大于等于基准值
+         * 5.把左右两拨分开递归调用重复上面的1，2，3，4步骤。
+         */
+        int base = a[low]; // 基准值
+        while (low < hight) {
+            System.out.println("----------------------------");
+            System.out.println("s:" + Arrays.toString(a));
+            // 找到比基准值小的数
+            while (low < hight && base <= a[hight]) {
+                hight--;
+            }
+            //找到比基准值小的，则把基准所在的位置 设置上这个小的值
+            a[low] = a[hight];
+            System.out.println("m:" + Arrays.toString(a));
+            // 找到比基准值大的数
+            while (low < hight && base >= a[low]) {
+                // 如果从左边开始，比基准值小的话，那么要把索引增加，相当于遍历
+                low++;
+            }
+            a[hight] = a[low];
+            System.out.println("e:" + Arrays.toString(a));
+        }
+        a[low] = base;
+        return low; // 返回这个中间值
+    }
+```
+
+```bash
+基准值=6
+---------------------------- 第一轮
+s:[6, 8, 1, 3, 2, 6, 4]    // 在高位找到比基准值小的值
+m:[4, 8, 1, 3, 2, 6, 4]    // 找到后，直接把当前的低位（最开始是拿第一个值作为低位的）换成这个小值
+e:[4, 8, 1, 3, 2, 6, 8]    // 在低位找到比基准值大的值，
+                           // 上一步已经把高位中的一个值存放到基准上面了，所以空缺,就把这个高位插入找到的大值
+---------------------------- 第二论
+s:[4, 8, 1, 3, 2, 6, 8]
+m:[4, 2, 1, 3, 2, 6, 8]
+e:[4, 2, 1, 3, 2, 6, 8]
+
+--------------------------- 从两头往中间对比，最后到达中间位置没有可比较的了
+[4, 2, 1, 3, 6, 6, 8]	    // 把当前的低位也就是中间位赋值上基准值，就如同这里，基准值左边的始终比基准值小，右边的始终比基准值大,或则相等。 
+
+// 然后分成两拨，继续上面的步骤，直到最后没有可比了，则整个列表就都是有序的了			  
+
+```
