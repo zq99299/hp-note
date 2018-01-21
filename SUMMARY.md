@@ -8,4 +8,9 @@
   * [Java常用排序算法](chapter/java_height_base/sort.md)
 * [JAVA内存模型](chapter/memory_model/index.md)
   * [基础](chapter/memory_model/base.md)
+  
+## 实战JAVA虚拟机
+* [实战JAVA虚拟机](chapter/jvm/index.md)
+  * [原码、反码、补码](chapter/jvm/code.md)
+
 
