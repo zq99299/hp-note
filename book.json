@@ -6,6 +6,7 @@
    "plugins": [
       "splitter",
       "-github",
+      "katex",
       "prism",
       "-highlight",
       "expandable-chapters",
