@@ -1,6 +1,6 @@
 # 基本数据类型
 
-> [官网解释点这里](https://zq99299.gitbooks.io/java-tutorial/content/content/java/nutsandbolts/datatypes.html)
+> [官网教程点这里](https://zq99299.gitbooks.io/java-tutorial/content/content/java/nutsandbolts/datatypes.html)
 
 按类型分：
 
