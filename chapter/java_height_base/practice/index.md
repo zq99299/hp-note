@@ -8,6 +8,8 @@
    -  gitbook在线或则本地启动的服务浏览效果比浏览git源文件要好很多很多
 >
 > [GITHUB练习题项目地址](https://github.com/zq99299/newstudy)
+>
+> 注：GitBook生成的PDF对代码快支持不太好，所以能用上面的方式看最好
 
 git目录规范说明：
 ```
