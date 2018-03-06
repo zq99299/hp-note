@@ -6,6 +6,7 @@
   * [进制](chapter/java_height_base/hex.md)
   * [原码、反码、补码](chapter/java_height_base/code.md)
   * [Java常用排序算法](chapter/java_height_base/sort.md)
+  * [IO全接触](chapter/java_height_base/io.md)
 * [高端基础作业](chapter/java_height_base/practice/index.md)
   * [第01课](chapter/java_height_base/practice/01.md)
   * [第02课](chapter/java_height_base/practice/02.md)
