@@ -26,6 +26,12 @@
     },
     "theme-default": {
        "showLevel": true
-    }
+    },
+    "page-footer-ex": {
+         "copyright": "[朱强](https://github.com/zq99299/hp-note/blob/master/SUMMARY.md)",
+         "markdown": true,
+         "update_label": "<strong>updated</strong>",
+         "update_format": "YYYY-MM-DD HH:mm:ss"
+     }
   }
 } 
