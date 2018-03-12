@@ -154,5 +154,27 @@ limit=10,capactiy=15,position=4
 可以看出 mark 和 reset可以作为组合使用；打标记，回到标记处
 
 
+## NIO的MappedByteBuffer 文件映射到内存
+
+```java
+    @Test
+    public void fun4() throws IOException {
+        RandomAccessFile raf = new RandomAccessFile("resources/_02/q04/mbb", "rw");
+        FileChannel channel = raf.getChannel();
+        MappedByteBuffer mbb = channel.map(FileChannel.MapMode.READ_WRITE, 0, raf.length());// 把文件的所有内容都映射到内存中
+
+        while (mbb.hasRemaining()) {
+            System.out.print(mbb.get());
+        }
+
+        // 改写buffer中的值，但是要注意，这里的索引不能大于 channel.map中映射的大小
+        mbb.putChar(0, '1');
+        channel.close();
+        raf.close();
+        // 这里很奇怪的问题是，在idea中没有看到文件有变化，但是用其他工具打开文件，的确被改写了
+    }
+```
+
+只能看出来MappedByteBuffer的使用和Buffer使用类似，但是具体的使用场景是什么真搞不清楚
 
 
