@@ -27,7 +27,19 @@ Java IO包中的Bits类,默认使用的是大头
  * Utility methods for packing/unpacking primitive values in/out of byte arrays
  * using big-endian byte ordering.
  */
+ 
+     static void putInt(byte[] b, int off, int val) {
+        b[off + 3] = (byte) (val       );
+        b[off + 2] = (byte) (val >>>  8);
+        b[off + 1] = (byte) (val >>> 16);
+        b[off    ] = (byte) (val >>> 24);
+    }
 ```
+
+上面这个是大头的 int 存储为byte；怎么看待 (byte)val（低位） 存储在 索引3(高地址)？
+反过来看：val >>> 24 ;剩下的是8个高位，存储在了 索引0位置， 高位存储在低位；
+
+上面二进制来看，0x12345678;假设右移，0x12 剩下的是高位；存储在底地址上
 
 ## 装饰器模式：
 ![](/assets/java_height_base/02/装饰器模式.png)
