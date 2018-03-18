@@ -47,6 +47,8 @@ Java IO包中的Bits类,默认使用的是大头
 
 为什么大头模式高位是放在地址上面的？cpu开始读取起始地址+长度，还是和cpu有硬件有关； 
 
+`java.nio.ByteOrder` 类告诉你了怎么能得到到底是大头还是小头的判定
+
 ## 装饰器模式：
 ![](/assets/java_height_base/02/装饰器模式.png)
 
