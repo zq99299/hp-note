@@ -49,6 +49,13 @@ Java IO包中的Bits类,默认使用的是大头
 
 `java.nio.ByteOrder` 类告诉你了怎么能得到到底是大头还是小头的判定
 
+
+下面的api使用可以去测试下 怎么用的
+```java
+  ByteBuffer buffer = ByteBuffer.allocate(100);
+  buffer.order(ByteOrder.BIG_ENDIAN).getInt();
+````
+
 ## 装饰器模式：
 ![](/assets/java_height_base/02/装饰器模式.png)
 
