@@ -189,4 +189,7 @@ limit=10,capactiy=15,position=4
 
 只能看出来MappedByteBuffer的使用和Buffer使用类似，但是具体的使用场景是什么真搞不清楚
 
+## 官方的字节字符解码器
+`sun.nio.cs.StreamDecoder`  `sun.nio.cs.StreamEncoder`
 
+大概看了下代码 ，没有看到怎么从字节转换到字符的。要调试去深入研究？
