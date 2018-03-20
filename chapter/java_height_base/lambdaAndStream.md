@@ -51,5 +51,5 @@ Thread 的构造函数接受一个 Runnable 接口；而上面的代码又是等
 
 可以看出来，需要的是一个 function接口;该接口的功能是 该接口接收一个对象T，经过转换判断，返回一个对象R； 那么在这里是把Apple 转成了 String；  所以只要有是Function的子类，就都可以丢给map函数；我相信其他的api也一定是类似的；
 
-> [其他的函数接口测试请右键新窗口查看GIT](https://github.com/zq99299/newstudy/blob/master/hp-base/src/test/java/cn/mrcode/newstudy/hpbase/_04/q04/functioninterface/Practice.java)
+> [其他的函数接口测试请右键新窗口查看GIT](https://github.com/zq99299/newstudy/blob/master/hp-base/src/test/java/cn/mrcode/newstudy/hpbase/_04/functioninterface/Practice.java)
 
