@@ -53,3 +53,25 @@ Thread 的构造函数接受一个 Runnable 接口；而上面的代码又是等
 
 > [其他的函数接口测试请右键新窗口查看GIT](https://github.com/zq99299/newstudy/blob/master/hp-base/src/test/java/cn/mrcode/newstudy/hpbase/_04/functioninterface/Practice.java)
 
+## stream - 测试总结
+
+* 创建流
+    * `Stream.of(arr)`
+    * 各种集合的 `.stream()`
+    * 创建无限流：` Stream.generate(Math::random)`
+    * 创建无限流：` Stream.iterate(0, n -> n + 1)`
+* 流转换
+    * filter : 过滤
+    * map ：把每个元素转换成你所需要的类型
+    * flatMap : 展开流，把一个流集合展开成一个流
+* 提取子流
+    * skip ： 跳过n个元素
+    * limit ：返回包含n个元素的流
+* 组合流
+    * concat : 把多个流组合成一个流
+* 有状态的转换
+    * distinct ： 去重，去重就得记录之前读取到的元素才能去重，所以叫有状态
+    * sorted ： 排序
+* 聚合方法 ：将流聚合成一个值，流被终结不能再使用
+
+
