@@ -73,5 +73,11 @@ Thread 的构造函数接受一个 Runnable 接口；而上面的代码又是等
     * distinct ： 去重，去重就得记录之前读取到的元素才能去重，所以叫有状态
     * sorted ： 排序
 * 聚合方法 ：将流聚合成一个值，流被终结不能再使用
+* 分组和分片：
+    * groupingBy ：按逻辑分组
+    * partitioningBy ：只返回 true 或则 false的分组
+
+
+##
 
 
