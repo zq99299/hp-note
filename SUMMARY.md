@@ -8,6 +8,7 @@
   * [Java常用排序算法](chapter/java_height_base/sort.md)
   * [IO全接触](chapter/java_height_base/io.md)
   * [网络编程基础](chapter/java_height_base/网络编程基础.md)
+  * [Java网络编程入门](chaptr/java_height_base/java网络编程入门.md)
   * [lambda与stream api](chapter/java_height_base/lambdaAndStream.md)
 * [高端基础作业](chapter/java_height_base/practice/index.md)
   * [第01课](chapter/java_height_base/practice/01.md)
