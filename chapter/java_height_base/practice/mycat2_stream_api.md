@@ -116,9 +116,10 @@ flatMap 作用：由于现在你手里是一堆的list，你要遍历这一堆�
   // 不包括9
   IntStream.range('0', '9').forEach(c -> System.out.println(c));
 
-  for (int i = '0'; i < '9'; i++) {
-      System.out.println(i);
-  }
+    // 48 49 50 51 52 53 54 55 56
+    for (int i = '0'; i < '9'; i++) {
+        System.out.print(i + " ");
+    }
 ```
 
 ## 难点
