@@ -8,13 +8,13 @@
   * [Java常用排序算法](chapter/java_height_base/sort.md)
   * [IO全接触](chapter/java_height_base/io.md)
   * [lambda与stream api](chapter/java_height_base/lambdaAndStream.md)
-
 * [高端基础作业](chapter/java_height_base/practice/index.md)
   * [第01课](chapter/java_height_base/practice/01.md)
   * [第02课](chapter/java_height_base/practice/02.md)
-  * [MyCat2中用到的stream api场景](chapter/java_height_base/practice/mycat2_stream_api.md)
+  * [MyCat2中用到的stream api精选](chapter/java_height_base/practice/mycat2_stream_api.md)
 
-  
+---
+
 * [JAVA内存模型](chapter/memory_model/index.md)
   * [基础](chapter/memory_model/base.md)
 
