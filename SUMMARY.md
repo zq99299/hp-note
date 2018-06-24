@@ -28,4 +28,6 @@
   
 ## 网络编程第4版
 
+## [mysql客户端/服务协议](chapter/mysql/clientServerProtocol/index.md)
+
 
