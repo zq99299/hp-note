@@ -28,8 +28,9 @@
   
 ## 网络编程第4版
 
-## [mysql客户端/服务协议](chapter/mysql/client_server_protocol/index.md)
-  [基本数据类型](chapter/mysql/client_server_protocol/basic_types.md)
+## MySql
+* [mysql客户端/服务协议](chapter/mysql/client_server_protocol/index.md)
+  * [基本数据类型](chapter/mysql/client_server_protocol/basic_types.md)
 
 
 
