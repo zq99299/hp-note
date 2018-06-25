@@ -38,3 +38,16 @@ fa  -  250
 fc fb 00  -  251   ; fc = 252; fb + 00 = 251
 ```
 ## string
+
+* `string<fix>` 固定长度
+* `string<NUL>` 以`[00]`字节结尾的字符串。
+* `string<var>` 字符串的长度由另一个字段确定或在运行时计算
+* `string<lenenc>` 长度编码类型，与Int类型的长度编码类型一致
+* `string<EOF>` 如果一个字符串是数据包的最后一个组件，它的长度可以从总包长度减去当前位置来计算。
+
+## `string<lenenc>` 长度编码类型
+```
+length （ int <lenenc>） - 字符串的长度
+
+string （string<fix>） - [len = $length]字符串
+```
