@@ -35,9 +35,8 @@
     * [MySqls数据包](chapter/mysql/client_server_protocol/overview/mysql_packet.md)
     * [通用响应数据包](chapter/mysql/client_server_protocol/overview/generic_response_packets.md)
       * [OK_PACKET](chapter/mysql/client_server_protocol/overview/OK_PACKET.md)
+    * [字符集](chapter/mysql/client_server_protocol/overview/character_set.md)
 
-
-   
   * [连接阶段](chapter/mysql/client_server_protocol/onnection_phase/index.md)
 
 
