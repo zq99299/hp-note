@@ -30,6 +30,7 @@
 
 ## MySql
 * [mysql客户端/服务协议](chapter/mysql/client_server_protocol/index.md)
+  * [基本数据类型](chapter/mysql/client_server_protocol/Overview/index.md)
   * [基本数据类型](chapter/mysql/client_server_protocol/basic_types.md)
 
 
