@@ -38,6 +38,8 @@
     * [字符集](chapter/mysql/client_server_protocol/overview/character_set.md)
 
   * [连接阶段](chapter/mysql/client_server_protocol/onnection_phase/index.md)
+ 
+ * [文本协议](chapter/mysql/client_server_protocol/text_protocol/index.md)
 
 
 
