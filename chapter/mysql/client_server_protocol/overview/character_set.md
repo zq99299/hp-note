@@ -1,4 +1,5 @@
 # 字符集
+> https://dev.mysql.com/doc/internals/en/character-set.html
 mysql支持很多字符集，在使用查询语句能看到当前数据库下支持的字符集
 
 ```
