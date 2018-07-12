@@ -41,6 +41,10 @@
  
  * [文本协议](chapter/mysql/client_server_protocol/text_protocol/index.md)
 
+## MyCat源码解析
+
+[MyCat源码解析](chapter/mycat/index.md)
+  [前段](chapter/mycat/前段.md)
 
 
 
