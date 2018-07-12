@@ -43,8 +43,8 @@
 
 ## MyCat源码解析
 
-[MyCat源码解析](chapter/mycat/index.md)
-  [前段](chapter/mycat/前段.md)
+* [MyCat源码解析](chapter/mycat/index.md)
+  * [前段](chapter/mycat/前段.md)
 
 
 
